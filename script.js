@@ -5,19 +5,19 @@ function showResult() {
   // 🔒 Secret predefined order
   const chosenOrder = [
     "ANJU PATHROSE ONE",
-    "ANJU PATHROSE TWO",
     "FATHIMA KP",
     "AKHILA AND CHINDU SPLIT",
     "ANCY ANTONY",
     "CHINDUMOLE",
     "FAHAD KP",
     "FEBY KOSHY ONE",
-    "FEBY KOSHY TWO",
     "AKHILA SARATH",
     "NISHA PULIVELICHIRA",
     "JOMON",
     "ISHARA",
     "SARATH",
+    "ANJU PATHROSE TWO",
+    "FEBY KOSHY TWO",
     "BENCY"
   ];
 
@@ -63,3 +63,4 @@ function displayFinalResult(ordered) {
     }, index * 300);
   });
 }
+
