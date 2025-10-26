@@ -1,31 +1,26 @@
 function showResult() {
-  const eventKey = document.getElementById("event").value.trim().toLowerCase();
   const input = document.getElementById("names").value.trim();
   const names = input.split("\n").map(n => n.trim()).filter(n => n);
 
-  // 🔒 Secret predefined orders
-  const secretOrders = {
-    "anju pathrose one": [
-      "ANJU PATHROSE ONE",
-      "ANJU PATHROSE TWO",
-      "FATHIMA KP",
-      "AKHILA AND CHINDU SPLIT",
-      "ANCY ANTONY",
-      "CHINDUMOLE",
-      "FAHAD KP",
-      "FEBY KOSHY ONE",
-      "FEBY KOSHY TWO",
-      "AKHILA SARATH",
-      "NISHA PULIVELICHIRA",
-      "JOMON",
-      "ISHARA",
-      "SARATH",
-      "BENCY"
-    ],
-    "default": ["Alice", "Bob", "Charlie"]
-  };
+  // 🔒 Secret predefined order
+  const chosenOrder = [
+    "ANJU PATHROSE ONE",
+    "ANJU PATHROSE TWO",
+    "FATHIMA KP",
+    "AKHILA AND CHINDU SPLIT",
+    "ANCY ANTONY",
+    "CHINDUMOLE",
+    "FAHAD KP",
+    "FEBY KOSHY ONE",
+    "FEBY KOSHY TWO",
+    "AKHILA SARATH",
+    "NISHA PULIVELICHIRA",
+    "JOMON",
+    "ISHARA",
+    "SARATH",
+    "BENCY"
+  ];
 
-  const chosenOrder = secretOrders[eventKey] || secretOrders["default"];
   const ordered = chosenOrder.filter(name => names.includes(name));
 
   const resultEl = document.getElementById("result");
