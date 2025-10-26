@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Name Order Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎲 Random Order Generator</h1>
+
+  <div class="container">
+    <label for="event">Enter Event or Key (for secret order):</label><br>
+    <input type="text" id="event" placeholder="e.g. Anju Pathrose One"><br><br>
+
+    <label for="names">Enter Names (one per line):</label><br>
+    <textarea id="names" placeholder="Enter names, one per line..."></textarea><br>
+
+    <button onclick="showResult()">Generate Random Order</button>
+
+    <h2>Result:</h2>
+    <ol id="result"></ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
